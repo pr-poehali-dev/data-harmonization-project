@@ -23,10 +23,10 @@ export default function HeroSection() {
 
   const navItems = [
     { name: "Главная", href: "#hero" },
-    { name: "Миссия", href: "#mission" },
-    { name: "Сообщество", href: "#community" },
+    { name: "О нас", href: "#mission" },
+    { name: "Истории", href: "#community" },
     { name: "Отзывы", href: "#testimonials" },
-    { name: "Вступить", href: "#join" },
+    { name: "Присоединиться", href: "#join" },
   ]
 
   // Navigation handlers
@@ -57,7 +57,7 @@ export default function HeroSection() {
       {/* Navigation */}
       <nav className="relative z-20 flex items-center justify-between p-6 md:p-8">
         {/* Logo/Brand */}
-        <div className="text-white font-bold text-xl tracking-wider">STRIDE</div>
+        <div className="text-white font-bold text-xl tracking-wider">RUN CLUB</div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
@@ -105,13 +105,15 @@ export default function HeroSection() {
         <div className="text-center text-white max-w-4xl">
           {/* Main Title */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-wider mb-4 leading-none">
-            STRIDE
+            БЕГИ
             <br />
-            COLLECTIVE
+            С НАМИ
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl font-light tracking-wide mb-8 text-gray-200">Беговое сообщество</p>
+          <p className="text-xl md:text-2xl font-light tracking-wide mb-8 text-gray-200">
+            Беговой клуб для тех, кто хочет большего
+          </p>
 
           {/* CTA Button - Now using LiquidButton */}
           <LiquidButton
@@ -119,7 +121,7 @@ export default function HeroSection() {
             className="font-semibold text-lg tracking-wide"
             onClick={() => scrollToSection("#join")}
           >
-            Присоединиться
+            Вступить в клуб
           </LiquidButton>
         </div>
       </div>
